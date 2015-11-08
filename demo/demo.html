@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>slick flash</title>
+    <link rel="stylesheet" href="../stylesheets/css/slick-flash.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascripts/slick-flash.js"></script>
+    <style media="screen">
+      html,body {
+        margin: 0;
+        width: 100%;
+        background-image: url("images/tweed.png");
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" name="button" class="information-test">Test information</button>
+    <button type="button" name="button" class="success-test">Test success</button>
+    <button type="button" name="button" class="error-test">Test error</button>
+    <button type="button" name="button" class="warning-test">Test warning</button>
+    <script type="text/javascript">
+      $('.information-test').click(function() {
+        $.slickFlash('information', 'You have 3 new messages in your inbox');
+      });
+      $('.success-test').click(function() {
+        $.slickFlash('success', 'Your application wass successfully submitted');
+      });
+      $('.error-test').click(function() {
+        $.slickFlash('error', 'An error occurred while sending mail. The mail server responded: Authentication is required');
+      });
+      $('.warning-test').click(function() {
+        $.slickFlash('warning', 'Your subscription is due to expire in 9 days');
+      });
+    </script>
+  </body>
+</html>

@@ -11,11 +11,11 @@ class SlickFlash
     console.log 'info'
     genrate_html('information', msg)
 
-  good: (msg) ->
-    genrate_html('good', msg)
+  success: (msg) ->
+    genrate_html('success', msg)
 
-  bad: (msg) ->
-    genrate_html('bad', msg)
+  error: (msg) ->
+    genrate_html('error', msg)
 
   genrate_html = (type, msg) ->
     container = $ '<div>'
@@ -47,6 +47,6 @@ class SlickFlash
     switch msg_type
       when 'warning' then sf.warning(msg)
       when 'information' then sf.information(msg)
-      when 'good' then sf.good(msg)
-      when 'bad' then sf.bad(msg)
+      when 'success' then sf.success(msg)
+      when 'error' then sf.error(msg)
 ) jQuery

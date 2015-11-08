@@ -17,12 +17,12 @@ SlickFlash = (function() {
     return genrate_html('information', msg);
   };
 
-  SlickFlash.prototype.good = function(msg) {
-    return genrate_html('good', msg);
+  SlickFlash.prototype.success = function(msg) {
+    return genrate_html('success', msg);
   };
 
-  SlickFlash.prototype.bad = function(msg) {
-    return genrate_html('bad', msg);
+  SlickFlash.prototype.error = function(msg) {
+    return genrate_html('error', msg);
   };
 
   genrate_html = function(type, msg) {
@@ -61,10 +61,10 @@ SlickFlash = (function() {
           return sf.warning(msg);
         case 'information':
           return sf.information(msg);
-        case 'good':
-          return sf.good(msg);
-        case 'bad':
-          return sf.bad(msg);
+        case 'success':
+          return sf.success(msg);
+        case 'error':
+          return sf.error(msg);
       }
     }
   });
