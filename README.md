@@ -38,6 +38,7 @@ $.slickFlash('warning', 'Your subscription is due to expire in 9 days');
 
 ## ToDo
  - Configurable defaults
+ - Refactor Coffeescript
  - Optional display time
  - Optional message name
  - Customisable colours including opacity
