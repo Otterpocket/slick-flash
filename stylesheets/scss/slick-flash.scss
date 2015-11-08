@@ -4,7 +4,7 @@ html,body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../../images/jellyfish.jpg");
+  // background-image: url("../../images/jellyfish.jpg");
 }
 
 $good: #00ff03;
@@ -92,7 +92,7 @@ $info: #00C0FF;
       background-color: $warning;
     }
   }
-  &.info {
+  &.information {
     .message-type {
       color: $info;
     }
